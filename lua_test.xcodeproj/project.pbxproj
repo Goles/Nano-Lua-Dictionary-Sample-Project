@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8AE540E15B8CD6E003A2521 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C8AE540D15B8CD6E003A2521 /* main.c */; };
+		C8AE541015B8CD6E003A2521 /* lua_test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C8AE540F15B8CD6E003A2521 /* lua_test.1 */; };
+		C8EC8EA416A339D700ABE804 /* nanoluadict.c in Sources */ = {isa = PBXBuildFile; fileRef = C8EC8EA216A339D700ABE804 /* nanoluadict.c */; };
+		C8EC8FAA16A340F100ABE804 /* libLua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8EC8FA716A340D600ABE804 /* libLua.a */; };
+		C8EC8FAC16A3428400ABE804 /* tableprint.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = C847E8AE15BA11ED00471F4A /* tableprint.lua */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8EC8FA616A340D600ABE804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EC8F9F16A340D600ABE804 /* Lua.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8EC8F2416A340AB00ABE804;
+			remoteInfo = Lua;
+		};
+		C8EC8FA816A340E900ABE804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8EC8F9F16A340D600ABE804 /* Lua.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C8EC8F2316A340AB00ABE804;
+			remoteInfo = Lua;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C8AE540715B8CD6E003A2521 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C8EC8FAC16A3428400ABE804 /* tableprint.lua in CopyFiles */,
+				C8AE541015B8CD6E003A2521 /* lua_test.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C847E8AE15BA11ED00471F4A /* tableprint.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tableprint.lua; sourceTree = "<group>"; };
+		C8AE540915B8CD6E003A2521 /* lua_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lua_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8AE540D15B8CD6E003A2521 /* main.c */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C8AE540F15B8CD6E003A2521 /* lua_test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = lua_test.1; sourceTree = "<group>"; };
+		C8EC8EA216A339D700ABE804 /* nanoluadict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nanoluadict.c; sourceTree = "<group>"; };
+		C8EC8EA316A339D700ABE804 /* nanoluadict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanoluadict.h; sourceTree = "<group>"; };
+		C8EC8F9F16A340D600ABE804 /* Lua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lua.xcodeproj; path = Lua/Lua.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8AE540615B8CD6E003A2521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8EC8FAA16A340F100ABE804 /* libLua.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8AE53FE15B8CD6E003A2521 = {
+			isa = PBXGroup;
+			children = (
+				C8EC8F9F16A340D600ABE804 /* Lua.xcodeproj */,
+				C8AE540C15B8CD6E003A2521 /* lua_test */,
+				C8AE540A15B8CD6E003A2521 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8AE540A15B8CD6E003A2521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8AE540915B8CD6E003A2521 /* lua_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8AE540C15B8CD6E003A2521 /* lua_test */ = {
+			isa = PBXGroup;
+			children = (
+				C8EC8EA216A339D700ABE804 /* nanoluadict.c */,
+				C8EC8EA316A339D700ABE804 /* nanoluadict.h */,
+				C847E8AE15BA11ED00471F4A /* tableprint.lua */,
+				C8AE540D15B8CD6E003A2521 /* main.c */,
+				C8AE540F15B8CD6E003A2521 /* lua_test.1 */,
+			);
+			path = lua_test;
+			sourceTree = "<group>";
+		};
+		C8EC8FA016A340D600ABE804 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8EC8FA716A340D600ABE804 /* libLua.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8AE540815B8CD6E003A2521 /* lua_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8AE541315B8CD6E003A2521 /* Build configuration list for PBXNativeTarget "lua_test" */;
+			buildPhases = (
+				C8AE540515B8CD6E003A2521 /* Sources */,
+				C8AE540615B8CD6E003A2521 /* Frameworks */,
+				C8AE540715B8CD6E003A2521 /* CopyFiles */,
+				C8D319C216A3488D00FC0241 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8EC8FA916A340E900ABE804 /* PBXTargetDependency */,
+			);
+			name = lua_test;
+			productName = lua_test;
+			productReference = C8AE540915B8CD6E003A2521 /* lua_test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8AE540015B8CD6E003A2521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = GandoGames;
+			};
+			buildConfigurationList = C8AE540315B8CD6E003A2521 /* Build configuration list for PBXProject "lua_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8AE53FE15B8CD6E003A2521;
+			productRefGroup = C8AE540A15B8CD6E003A2521 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C8EC8FA016A340D600ABE804 /* Products */;
+					ProjectRef = C8EC8F9F16A340D600ABE804 /* Lua.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C8AE540815B8CD6E003A2521 /* lua_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C8EC8FA716A340D600ABE804 /* libLua.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLua.a;
+			remoteRef = C8EC8FA616A340D600ABE804 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8D319C216A3488D00FC0241 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r ${SRCROOT}/lua_test/tableprint.lua ${TARGET_BUILD_DIR}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8AE540515B8CD6E003A2521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8AE540E15B8CD6E003A2521 /* main.c in Sources */,
+				C8EC8EA416A339D700ABE804 /* nanoluadict.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8EC8FA916A340E900ABE804 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Lua;
+			targetProxy = C8EC8FA816A340E900ABE804 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C8AE541115B8CD6E003A2521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C8AE541215B8CD6E003A2521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C8AE541415B8CD6E003A2521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-llua";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8AE541515B8CD6E003A2521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-llua";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8AE540315B8CD6E003A2521 /* Build configuration list for PBXProject "lua_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8AE541115B8CD6E003A2521 /* Debug */,
+				C8AE541215B8CD6E003A2521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8AE541315B8CD6E003A2521 /* Build configuration list for PBXNativeTarget "lua_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8AE541415B8CD6E003A2521 /* Debug */,
+				C8AE541515B8CD6E003A2521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8AE540015B8CD6E003A2521 /* Project object */;
+}
